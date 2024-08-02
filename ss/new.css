@@ -1,0 +1,80 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+svg{
+    margin: 10% 15%;
+    animation: fill 2s ease forwards 4s;
+}
+
+svg path:nth-child(1){
+    stroke-dasharray: 1020;
+    stroke-dashoffset: 1020;
+    animation: anju 2s ease forwards 2s;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 1330;
+    stroke-dashoffset: 1330;
+    animation: anju 2s ease forwards 2s;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 820;
+    stroke-dashoffset: 820;
+    animation: anju 2s ease forwards 2s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 1820;
+    stroke-dashoffset: 1820;
+    animation: anju 2s ease forwards 2s;
+}
+
+@keyframes anju {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #fff;
+    }
+} */
+
+.container{
+    height: 220px;
+    width: 220px;
+    background-color: brown;
+    border-radius: 50%;
+    position: relative;
+    animation: an 3s infinite;
+}
+@keyframes an {
+    0%{
+        background-color: brown;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: yellow;
+        top: 0px;
+        left: 1050px;
+    }
+    50%{
+        background-color: purple;
+        top: 275px;
+        left: 1050px;
+    }
+    75%{
+        background-color: aquamarine;
+        top: 275px;
+        left: 0px;
+    }
+    100%{
+        background-color: antiquewhite;
+        top: 0px;
+        left: 0px;
+    }
+}
